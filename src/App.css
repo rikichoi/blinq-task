@@ -1,38 +1,224 @@
-.App {
+.hr-big {
+  border: none;
+  height: 3px;
+  color: rgb(150, 150, 150);
+  background-color: rgb(150, 150, 150);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header h1 {
+  font-family: 'Trispace', sans-serif;
+  color: rgb(90, 90, 90);
+  font-size: 1.7rem;
+  padding-left: 130px;
+  margin: 2rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer h1 {
+  font-family: 'Trispace', sans-serif;
+  font-weight: 500;
+  color: rgb(90, 90, 90);
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.signup .contents {
+  font-family: 'Trispace', sans-serif;
+  color: rgb(90, 90, 90);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.signup h1 {
+  text-align: center;
+  font-size: 3.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.signup h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.signup h3 {
+  padding-top: 3rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.signup h4 {
+  padding: 1.7em 1em;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: rgb(125, 125, 125);
+}
+
+.signup .request-button {
+  font-family: 'Trispace', sans-serif;
+  color: rgb(90, 90, 90);
+  border-color: rgb(150, 150, 150);
+  border-radius: 3px;
+  border: solid 2px;
+  font-weight: 400;
+  font-size: 1.3rem;
+  background-color: white;
+  padding: 1em 1em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.signup .request-button:hover {
+  background: rgb(66, 66, 66);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.signup input {
+  font-family: 'Trispace', sans-serif;
+  color: rgb(90, 90, 90);
+  border-color: rgb(150, 150, 150);
+  border-radius: 3px;
+  border: solid 2px;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: white;
+  padding: 0.5em;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1em;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.signup label {
+  font-family: 'Trispace', sans-serif;
+  color: red;
+  margin: 1.5rem;
+}
+
+.popup-request {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-request-inner {
+  position: relative;
+  height: 500px;
+  width: 480px;
+  background-color: #FFF;
+  border-color: rgb(150, 150, 150);
+  border-radius: 3px;
+  border: solid 2px;
+}
+
+.popup-confirmation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-confirmation-inner {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  background-color: #FFF;
+  border-color: rgb(150, 150, 150);
+  border-radius: 3px;
+  border: solid 2px;
+}
+
+.button-ok {
+  font-family: 'Trispace', sans-serif;
+  color: rgb(90, 90, 90);
+  border-color: rgb(150, 150, 150);
+  border-radius: 3px;
+  border: solid 2px;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: white;
+  padding: 0.7em;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 0.3em;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-ok:hover {
+  background: rgb(66, 66, 66);
+  color: white;
+}
+
+.button-send {
+  font-family: 'Trispace', sans-serif;
+  color: rgb(90, 90, 90);
+  border-color: rgb(150, 150, 150);
+  border-radius: 3px;
+  border: solid 2px;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: white;
+  padding: 0.7em;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 3.5em;
+  margin-bottom: 30px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-send:hover {
+  background: rgb(66, 66, 66);
+  color: white;
+}
+
+.hr-small {
+  width: 30px;
+  border: none;
+  height: 3px;
+  color: rgb(150, 150, 150);
+  background-color: rgb(150, 150, 150);
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 530px) {
+  .header h1 {
+    font-family: 'Trispace', sans-serif;
+    color: rgb(90, 90, 90);
+    font-size: 1.7rem;
+    padding-left: 0px;
+    text-align: center;
+    margin: 2rem;
   }
 }
