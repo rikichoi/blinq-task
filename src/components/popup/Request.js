@@ -135,7 +135,7 @@ function Request(props) {
           ></input>
           {confirmationError ? <label>{confirmationError}</label> : ""}
           <button type="submit" className="button-send" disabled={loading}>
-            {!loading && <span>Submit</span>}
+            {!loading && <span>Send</span>}
             {loading && <span>Sending. please wait...</span>}
           </button>
           {errorMsg ? (
